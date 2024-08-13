@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Jet';
+  src: url('fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Jet', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.container {
+  display: flex; /* Используем flexbox для горизонтального расположения */
+  max-width: 1200px; /* Увеличиваем максимальную ширину контейнера */
+  margin: 20px auto;
+  padding: 30px; /* Увеличиваем отступы внутри контейнера */
+  background: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для контейнера */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile-photo {
+  width: 300px; /* Увеличиваем размер фотографии */
+  height: 300px;
+  border-radius: 10%;
+  margin-right: 20px; /* Отступ справа от фотографии */
+}
+
+.info {
+  flex: 1; /* Позволяет тексту занимать оставшееся пространство */
+  text-align: left;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #cccccc;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение вкладок */
+  margin-top: 20px;
+}
+
+.tab {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 5px 0; /* Отступ между вкладками */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.details {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.details li {
+  margin: 10px 0;
+}
+
+a {
+  color: #00bfff; /* Цвет ссылок */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  color: #ffffff;
+}
+
+h4 {
+  margin-top: 20px;
+  color: #cccccc;
+}
+
+.social-links {
+  margin-top: 20px; /* Отступ сверху */
+  display: flex; /* Используем flexbox для вертикального расположения */
+  flex-direction: column; /* Вертикальное расположение */
+}
+
+.social-links a {
+  margin-bottom: 10px; /* Отступ между ссылками */
+  color: #00bfff; /* Цвет ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.social-links a:hover {
+  color: #ffffff; /* Цвет при наведении */
+}
